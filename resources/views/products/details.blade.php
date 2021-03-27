@@ -97,7 +97,7 @@
             @forelse ($relatedProducts as $pro)
             <div class="col-md-3">
                 <div class="product-item">
-                    <div class="product-title">
+                    <div class="product-title text-truncate">
                         <a href="#">{{$pro->name}}</a>
                         <div class="ratting">
                             <a style="font-size: 13px">
@@ -107,7 +107,7 @@
                     </div>
                     <div class="product-image">
                         <a href="{{route('products.detail', ['id' => $pro->id])}}">
-                            <img style="height: 300px;" src="{{url('product-images/'.$pro->image)}}"
+                            <img style="height: 330px;" src="{{url('product-images/'.$pro->image)}}"
                                 alt="{{$pro->name}}">
                         </a>
                         <div class="product-action">

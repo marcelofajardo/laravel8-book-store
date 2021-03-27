@@ -62,7 +62,7 @@
                     @forelse ($products as $pro)
                     <div class="col-md-4">
                         <div class="product-item">
-                            <div class="product-title">
+                            <div class="product-title text-truncate">
                                 <a href="{{route('products.detail', ['id' => $pro->id])}}">{{$pro->name}}</a>
                                 <div class="ratting">
                                     <a style="font-size: 13px">

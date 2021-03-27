@@ -31,7 +31,7 @@
                         <img src="{{asset('product-images/'.$pro->image)}}" alt="{{$pro->name}}"
                             style="height: 400px; width: 600px" />
                         <div class="header-slider-caption">
-                            <p>{{$pro->name}}</p>
+                            <p class="text-truncate">{{$pro->name}}</p>
                             <a class="btn" href="{{route('products.detail', ['id' => $pro->id])}}">
                                 <i class="fa fa-shopping-cart"></i>ดูสินค้า
                             </a>
@@ -103,7 +103,7 @@
             @forelse ($products as $pro)
             <div class="col-md-4">
                 <div class="product-item">
-                    <div class="product-title">
+                    <div class="product-title text-truncate">
                         <a href="#">{{$pro->name}}</a>
                         <div class="ratting">
                             <a style="font-size: 13px">
