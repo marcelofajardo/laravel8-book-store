@@ -52,7 +52,6 @@ class ProductController extends Controller
         return view('products.products', [
                 'products' => $products, 
                 'categories' => $categories,
-                'keyword' => $keyword,
         ]);
     }
     
